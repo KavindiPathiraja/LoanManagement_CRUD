@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LoanManagement_CRUD</display-name>
+  <welcome-file-list>
+    <welcome-file>dash.jsp</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  <!-- Loans -->
+     <servlet>
+		<servlet-name>LoanServlet</servlet-name>
+		<servlet-class>loanManagement.web.LoanServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoanServlet</servlet-name>
+		<url-pattern>/insertLoan</url-pattern>
+	</servlet-mapping>
+  
+  <servlet>
+		<servlet-name>list_loan</servlet-name>
+		<servlet-class>loanManagement.web.LoanServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoanServlet</servlet-name>
+		<url-pattern>/list_loan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateLoan</servlet-name>
+		<servlet-class>loanManagement.web.LoanServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoanServlet</servlet-name>
+		<url-pattern>/updateLoan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>editLoan</servlet-name>
+		<servlet-class>loanManagement.web.LoanServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoanServlet</servlet-name>
+		<url-pattern>/editLoan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>newLoan</servlet-name>
+		<servlet-class>loanManagement.web.LoanServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoanServlet</servlet-name>
+		<url-pattern>/newLoan</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteLoan</servlet-name>
+		<servlet-class>loanManagement.web.LoanServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoanServlet</servlet-name>
+		<url-pattern>/deleteLoan</url-pattern>
+	</servlet-mapping>
+	
+	
+</web-app>
